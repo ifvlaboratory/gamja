@@ -383,6 +383,10 @@ export default class App extends Component {
 			}
 		}
 
+		if (this.state.settings.systemUIFont) {
+			document.body.style = "font-family: system-ui";
+		}
+
 		this.setState({ loading: false, connectParams: connectParams });
 
 		if (connectParams.autoconnect) {

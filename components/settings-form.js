@@ -8,6 +8,7 @@ export default class SettingsForm extends Component {
 
 		this.state.secondsInTimestamps = props.settings.secondsInTimestamps;
 		this.state.bufferEvents = props.settings.bufferEvents;
+		this.state.systemUIFont = props.settings.systemUIFont;
 
 		this.handleInput = this.handleInput.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
@@ -95,6 +96,15 @@ export default class SettingsForm extends Component {
 						checked=${this.state.bufferEvents === "hide"}
 					/>
 					Hide chat events
+				</label>
+				<br/><br/>
+				<label>
+					<input
+						type="checkbox"
+						name="systemUIFont"
+						checked=${this.state.systemUIFont}
+					/>
+					Use system UI font rather than monospace
 				</label>
 				<br/><br/>
 

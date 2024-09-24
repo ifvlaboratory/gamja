@@ -213,6 +213,7 @@ export const State = {
 			settings: {
 				secondsInTimestamps: true,
 				bufferEvents: BufferEventsDisplayMode.FOLD,
+				systemUIFont: false,
 			},
 		};
 	},
