@@ -1,6 +1,7 @@
 :root {
 	--main-background: white;
 	--main-color: black;
+	--selection-background: #a4a4a4;
 	--sidebar-background: #e3e3e3;
 	--expander-background: #b5b5b5;
 	--expander-background-hover: #a6a6a6;
@@ -24,6 +25,7 @@
 	:root {
 		--main-background: #212529;
 		--main-color: #f8f9fa;
+		--selection-background: #636669;
 		--sidebar-background: #131618;
 		--expander-background: #424446;
 		--expander-background-hover: #2a2d2f;
@@ -38,6 +40,10 @@
 
 		--red: #fb615b;
 	}
+}
+
+::selection {
+	background-color: var(--selection-background);
 }
 
 html {
