@@ -11,7 +11,7 @@ artifacts:
 tasks:
 - setup: |
     cd gamja
-    npm install --include=dev
+    npm clean-install --include=dev
 - build: |
     cd gamja
     npm run build
