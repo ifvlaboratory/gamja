@@ -65,7 +65,7 @@ export default class SwitcherForm extends Component {
 
 		this.handleInput = this.handleInput.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
-		this.handleKeyUp = this.handleKeyUp.bind(this);
+		this.handleKeyDown = this.handleKeyDown.bind(this);
 	}
 
 	getSuggestions() {
@@ -106,7 +106,7 @@ export default class SwitcherForm extends Component {
 		this.props.onSubmit(this.getSuggestions()[this.state.selected]);
 	}
 
-	handleKeyUp(event) {
+	handleKeyDown(event) {
 		switch (event.key) {
 		case "ArrowUp":
 			event.stopPropagation();
@@ -152,7 +152,7 @@ export default class SwitcherForm extends Component {
 			<form
 				onInput=${this.handleInput}
 				onSubmit=${this.handleSubmit}
-				onKeyUp=${this.handleKeyUp}
+				onKeyDown=${this.handleKeyDown}
 			>
 				<input
 					type="search"
